@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'IdentificacionwNnaFD.ui'
+## Form generated from reading UI file 'Identificacion.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -13,12 +13,12 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
-            MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(800, 600)
-        self.centralwidget = QWidget(MainWindow)
+class Ui_Identificador(object):
+    def setupUi(self, Identificador):
+        if not Identificador.objectName():
+            Identificador.setObjectName(u"Identificador")
+        Identificador.resize(800, 600)
+        self.centralwidget = QWidget(Identificador)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayoutWidget = QWidget(self.centralwidget)
         self.gridLayoutWidget.setObjectName(u"gridLayoutWidget")
@@ -51,24 +51,24 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.B_inicio_sesion, 2, 1, 1, 1)
 
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QMenuBar(MainWindow)
+        Identificador.setCentralWidget(self.centralwidget)
+        self.menubar = QMenuBar(Identificador)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 800, 26))
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QStatusBar(MainWindow)
+        self.menubar.setGeometry(QRect(0, 0, 800, 21))
+        Identificador.setMenuBar(self.menubar)
+        self.statusbar = QStatusBar(Identificador)
         self.statusbar.setObjectName(u"statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        Identificador.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
+        self.retranslateUi(Identificador)
 
-        QMetaObject.connectSlotsByName(MainWindow)
+        QMetaObject.connectSlotsByName(Identificador)
     # setupUi
 
-    def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Contrase\u00f1a", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Ingresar Usuario", None))
-        self.B_inicio_sesion.setText(QCoreApplication.translate("MainWindow", u"Iniciar Sesi\u00f3n", None))
+    def retranslateUi(self, Identificador):
+        Identificador.setWindowTitle(QCoreApplication.translate("Identificador", u"MainWindow", None))
+        self.label_2.setText(QCoreApplication.translate("Identificador", u"Contrase\u00f1a", None))
+        self.label.setText(QCoreApplication.translate("Identificador", u"Ingresar Usuario", None))
+        self.B_inicio_sesion.setText(QCoreApplication.translate("Identificador", u"Iniciar Sesi\u00f3n", None))
     # retranslateUi
 

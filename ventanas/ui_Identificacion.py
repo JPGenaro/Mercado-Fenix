@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'IdentificaciontVVtSA.ui'
+## Form generated from reading UI file 'IdentificacionugsYdC.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -29,6 +29,7 @@ class Ui_Identificador(object):
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.txt_inicio_contra = QLineEdit(self.gridLayoutWidget)
         self.txt_inicio_contra.setObjectName(u"txt_inicio_contra")
+        self.txt_inicio_contra.setEchoMode(QLineEdit.Password)
 
         self.gridLayout.addWidget(self.txt_inicio_contra, 1, 1, 1, 1)
 
@@ -89,6 +90,7 @@ class Ui_Identificador(object):
 
         self.txt_registro_contra = QLineEdit(self.gridLayoutWidget_2)
         self.txt_registro_contra.setObjectName(u"txt_registro_contra")
+        self.txt_registro_contra.setEchoMode(QLineEdit.Password)
 
         self.gridLayout_2.addWidget(self.txt_registro_contra, 4, 1, 1, 1)
 
@@ -122,6 +124,7 @@ class Ui_Identificador(object):
 
     def retranslateUi(self, Identificador):
         Identificador.setWindowTitle(QCoreApplication.translate("Identificador", u"MainWindow", None))
+        self.txt_inicio_contra.setText(QCoreApplication.translate("Identificador", u"fgdg", None))
         self.label_2.setText(QCoreApplication.translate("Identificador", u"Contrase\u00f1a", None))
         self.label.setText(QCoreApplication.translate("Identificador", u"Usuario:", None))
         self.B_inicio_sesion.setText(QCoreApplication.translate("Identificador", u"Iniciar Sesi\u00f3n", None))

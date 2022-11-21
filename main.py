@@ -5,6 +5,7 @@ from PySide2.QtWidgets import QMainWindow, QApplication
 
 # Ventanas y archivos
 from ventanas.ui_Identificacion import Ui_Identificador
+from ventanas.home_ui import Ui_home
 
 #Codigo
 class MainWindow(QMainWindow):
@@ -18,9 +19,17 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
 
         #Botones
-        self.ui.B_inicio_sesion.clicked.connect()
+        self.ui.B_inicio_sesion.clicked.connect(self.w_home)
 
-    
+    #Ventana del home
+    def w_home(self):
+        self.ui = Ui_home()
+        self.ui.setupUi(self)
+
+        #Botones
+        #self.ui.B_compras.clicked.connect()
+        self.ui.B_salir.clicked.connect(self.w_sesion)
+
 
 
     

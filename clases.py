@@ -1,6 +1,3 @@
-from enum import nonmember
-
-
 class Usuario:
     def __init__(self, nombre, contra):
         self.nombre = nombre

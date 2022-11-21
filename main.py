@@ -27,7 +27,7 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
 
         #Botones
-        self.ui.B_inicio_sesion.clicked.connect(self.w_home)
+        self.ui.B_inicio_sesion.clicked.connect(self.iniciar_sesion)
         self.ui.B_registro.clicked.connect(self.registrar)
 
     def w_home(self):
@@ -66,7 +66,19 @@ class MainWindow(QMainWindow):
 
     #Iniciar usuarios
     def iniciar_sesion(self):
-        pass
+        mensaje = QMessageBox(self)
+        mensaje.setWindowTitle('Mensaje')
+        inicio_nombre = self.ui.txt_inicio_usuario.text().strip()
+        inicio_contra = self.ui.txt_inicio_contra.text().strip()
+        for i in range(len(usuarios)):
+            if inicio_nombre == usuarios[i].nombre and inicio_contra == usuarios[i].contra:
+                mensaje.setIcon(QMessageBox.Information)
+                mensaje.setText(f'Bienvenido {inicio_nombre} a Mercado Fenix...')
+                self.w_home()
+            else:
+                mensaje.setIcon(QMessageBox.Warning)
+                mensaje.setText('El nombre o la contraseña es incorrecta. Vuelva a ingresar...')
+        mensaje.exec_()
 
 
 

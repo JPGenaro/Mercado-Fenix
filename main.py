@@ -20,6 +20,8 @@ class MainWindow(QMainWindow):
 
         #Botones
         self.ui.B_inicio_sesion.clicked.connect(self.w_home)
+        self.ui.B_registro.connect(self.w_home)
+
 
     #Ventana del home
     def w_home(self):
@@ -27,8 +29,9 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
 
         #Botones
-        #self.ui.B_compras.clicked.connect()
+        # self.ui.B_compras.clicked.connect()
         self.ui.B_salir.clicked.connect(self.w_sesion)
+        # self.ui.B_tienda.clicked.connect()
 
 
 

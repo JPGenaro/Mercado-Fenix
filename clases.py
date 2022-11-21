@@ -22,4 +22,20 @@ prod_3 = Producto(
     "Gaseosas",
     50
 )
-productos = [prod_1, prod_2, prod_3]
+prod_4 = Producto(
+    "Aderesos",
+    60
+)
+prod_5 = Producto(
+    "Condimentos",
+    85
+)
+prod_6 = Producto(
+    "Fideos",
+    40
+)
+prod_7 = Producto(
+    "Chicles",
+    5
+)        
+productos = [prod_1, prod_2, prod_3, prod_4, prod_5, prod_6, prod_7]
